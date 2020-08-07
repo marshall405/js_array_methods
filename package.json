@@ -1,0 +1,15 @@
+{
+  "name": "flatten_array",
+  "version": "1.0.0",
+  "description": "Flatten array of arrays",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flatten",
+    "array"
+  ],
+  "author": "Marshall",
+  "license": "ISC"
+}
