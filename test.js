@@ -1,7 +1,5 @@
-const ArrayMethods = require("./index")
+const array = require("./index")
 
-
-const array = new ArrayMethods()
 
 
 function assert(expect, actual) {
@@ -47,3 +45,10 @@ function assert(expect, actual) {
 console.log(array.isEqual([1, 2, 3, 4], [1, 2, 3, 4]))
 console.log(array.isEqual([5, 2, 3, 4], [1, 2, 3, 4]))
 console.log(array.isEqual([5, {}, [], 4], [5, {}, [], 4]))
+console.log(array.isEqual([5, () => { }, [], 4], [5, () => { }, [], 4]))
+
+console.log(array.isEqual([1, 2, 3, 4, [[[[5, 6, [[[[[7, 8, 9]]]]]]]]]], [1, 2, 3, 4, 5, 6, 7, 8, 9]))
+
+
+console.log(array.shuffle([1, 2, 3, 4]))
+console.log(array.shuffle(["hello", 2, 3, 4, [4, 5, 6, 7], () => { }, "What"]))
