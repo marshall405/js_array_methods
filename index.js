@@ -95,8 +95,5 @@ class ArrayMethods {
 
 module.exports = new ArrayMethods()
 
-
-
-// shuffle - randomly shuffles the array
 // mostCommon - returns the most common item 
 // leastCommon - returns the least common item
